@@ -1,0 +1,114 @@
+/ {
+	fragment {
+		target-path = "/";
+		__overlay__ {
+			lcds {
+				lcd_hx83102d_skyworth_mipi_hd: lcd_hx83102d_skyworth_mipi_hd {
+					sprd,dsi-work-mode = <1>; /* video burst mode*/
+					sprd,dsi-lane-number = <4>;
+					sprd,dsi-color-format = "rgb888";
+
+					sprd,phy-bit-clock = <590000>;  /* kbps */
+					sprd,phy-escape-clock = <20000>;/* kHz */
+
+					sprd,width-mm = <68>;
+					sprd,height-mm = <151>;
+
+					sprd,esd-check-mode = <1>;
+					sprd,esd-check-enable = <1>;
+
+					sprd,reset-on-sequence = <1 5>, <0 5>, <1 20>;
+					sprd,reset-off-sequence = <0 5>;
+
+					sprd,initial-command = [
+						39 00 00 04 B9 83 10 2D
+						39 00 00 02 BD 00
+						39 00 00 1E E7 FF 10 02 02 3B 3B 11 11 1C 28 13 81 13 80 32 32 00 00 00 00 17 10 68 10 10 1D B9 23 B9
+						39 00 00 02 BD 01
+						39 00 00 08 E7 02 32 01 64 10 36 11
+						39 00 00 02 BD 02
+						39 00 00 14 E7 01 04 00 00 01 01 03 00 02 01 00 00 00 00 00 00 01 00 00
+						39 00 00 02 BD 00
+						39 00 00 0F B4 4A 52 4A 52 45 44 45 44 03 FF 03 03 00 FF
+						39 00 00 0C C0 30 30 00 00 19 42 00 08 00 1A 1B
+						39 00 00 0C B1 22 22 31 31 00 11 07 19 0D 0D 0D
+						39 00 00 0F B2 00 00 06 40 00 0E EE 34 11 00 00 01 84 E1
+						39 00 00 02 CC 02
+						39 00 00 27 D3 04 04 01 01 00 0C 0C 13 00 23 32 08 08 00 00 32 10 0F 00 0F 54 15 A8 05 A8 32 10 08 00 00 00 00 00 00 00 00 00 20
+						39 00 00 2D D5 18 18 3B 3B 3B 3B 21 20 3A 3A 19 19 19 19 19 19 18 18 18 18 18 18 03 02 01 00 3A 3A 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18
+						39 00 00 2D D6 18 18 3B 3B 3B 3B 20 21 19 19 3A 3A 19 19 19 19 18 18 18 18 18 18 00 01 02 03 3A 3A 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18
+						39 00 00 0D D8 2A AF EB E8 00 00 2A AF EB E8 00 00
+						39 00 00 02 BD 01
+						39 00 00 0D D8 2B FF FF F8 00 00 2B FF FF F8 00 00
+						39 00 00 02 BD 02
+						39 00 00 0D D8 2B FF FF F8 00 00 2B FF FF F8 00 00
+						39 00 00 02 BD 03
+						39 00 00 19 D8 2A FA AA B8 00 00 2A FA AA B8 00 00 2B FF FF F8 00 00 2B FF FF F8 00 00
+						39 00 00 02 BD 00
+						39 00 00 2F E0 00 09 18 23 2C 54 6F 77 7F 7C 95 9B A0 AF AD B4 BC CE CB 64 6B 75 7F 00 09 18 23 2C 54 6F 77 7F 7C 95 9B A0 AF AD B4 BC CE CB 64 6B 75 7F
+						39 00 00 14 BA 70 23 A8 83 B2 C0 C0 01 10 00 00 00 0D 3D 82 77 04 01 00
+						39 00 00 08 BF FC 00 04 9E F6 00 49
+						39 00 00 06 CB 00 13 00 02 85
+						39 00 00 02 BD 01
+						39 00 00 02 CB 01
+						39 00 00 02 BD 02
+						39 00 00 09 B4 42 00 33 00 33 88 B3 00
+						39 00 00 04 B1 7F 03 F5
+						39 00 00 02 BD 00
+						39 00 00 05 C9 04 07 40 01
+						39 00 00 03 51 00 00
+						39 00 00 02 53 24
+						39 00 00 02 35 00
+						39 78 00 01 11
+						39 32 00 01 29
+						];
+
+					sprd,sleep-in-command = [
+						13 0A 00 01 28
+						13 78 00 01 10
+						];
+					sprd,sleep-out-command = [
+						13 78 00 01 11
+						13 32 00 01 29
+						];
+					sprd,cabc-off-command = [
+						39 00 00 02 55 00
+						];
+					sprd,cabc-ui-command = [
+						39 00 00 02 55 03
+						];
+					sprd,cabc-still-command = [
+						39 00 00 02 55 03
+						];
+					sprd,cabc-moving-command = [
+						39 00 00 02 55 03
+						];
+
+					display-timings {
+						native-mode = <&hx83102d_boe_timing0>;
+
+						hx83102d_boe_timing0: timing0 {
+							clock-frequency = <76800000>;
+							hactive = <720>;
+							vactive = <1600>;
+							hback-porch = <18>;
+							hfront-porch = <18>;
+							vback-porch = <36>;
+							vfront-porch = <42>;
+							hsync-len = <4>;
+							vsync-len = <2>;
+						};
+					};
+
+					oled-backlight {
+						default-brightness = <809>;
+						sprd,max-level = <4095>;
+						brightness-levels = [
+							39 00 00 03 51 03 33
+						];
+					};
+				};
+			};
+		};
+	};
+};

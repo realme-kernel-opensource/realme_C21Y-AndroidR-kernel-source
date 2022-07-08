@@ -1,0 +1,114 @@
+
+<!-- PUB -->
+<counter_set name="SL2_PUB0_BM0_cnt" count="7" />
+<category name="SPRD ISP PUB" counter_set="SL2_PUB0_BM0_cnt" per_cpu="no">
+  <!--
+	PUB_ISP Performence Bus Monitor
+  -->
+  <event event="0x00003004" title="ISP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB ISP Read Transaction"/>
+  <event event="0x00013004" title="ISP" name="PUB_RBW" display="accumulate" class="incident" description="PUB ISP Read BandWidth"/>
+  <event event="0x00023004" title="ISP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB ISP Read Latency"/>
+  <event event="0x00033004" title="ISP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB ISP Write Transaction"/>
+  <event event="0x00043004" title="ISP" name="PUB_WBW" display="accumulate" class="incident" description="PUB ISP Write BandWidth"/>
+  <event event="0x00053004" title="ISP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB ISP Write Latency"/>
+  <event event="0x00063004" title="ISP" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB ISP Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM1_cnt" count="7" />
+<category name="SPRD GPU_GSP PUB" counter_set="SL2_PUB0_BM1_cnt" per_cpu="no">
+  <!--
+	PUB_GPU_GSP Performence Bus Monitor
+  -->
+  <event event="0x01003005" title="GPU_GSP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB GPU_GSP Read Transaction"/>
+  <event event="0x01013005" title="GPU_GSP" name="PUB_RBW" display="accumulate" class="incident" description="PUB GPU_GSP Read BandWidth"/>
+  <event event="0x01023005" title="GPU_GSP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB GPU_GSP Read Latency"/>
+  <event event="0x01033005" title="GPU_GSP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB GPU_GSP Write Transaction"/>
+  <event event="0x01043005" title="GPU_GSP" name="PUB_WBW" display="accumulate" class="incident" description="PUB GPU_GSP Write BandWidth"/>
+  <event event="0x01053005" title="GPU_GSP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB GPU_GSP Write Latency"/>
+  <event event="0x01063005" title="GPU_GSP" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB GPU_GSP Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM2_cnt" count="7" />
+<category name="SPRD DISPC PUB" counter_set="SL2_PUB0_BM2_cnt" per_cpu="no">
+  <!--
+	PUB_DISPC Performence Bus Monitor
+  -->
+  <event event="0x02003006" title="DISPC" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB DISPC Read Transaction"/>
+  <event event="0x02013006" title="DISPC" name="PUB_RBW" display="accumulate" class="incident" description="PUB DISPC Read BandWidth"/>
+  <event event="0x02023006" title="DISPC" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB DISPC Read Latency"/>
+  <event event="0x02033006" title="DISPC" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB DISPC Write Transaction"/>
+  <event event="0x02043006" title="DISPC" name="PUB_WBW" display="accumulate" class="incident" description="PUB DISPC Write BandWidth"/>
+  <event event="0x02053006" title="DISPC" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB DISPC Write Latency"/>
+  <event event="0x02063006" title="DISPC" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB DISPC Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM3_cnt" count="7" />
+<category name="SPRD A7 PUB" counter_set="SL2_PUB0_BM3_cnt" per_cpu="no">
+  <!--
+	PUB_A7 Performence Bus Monitor
+  -->
+  <event event="0x03003007" title="A7" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB A7 Read Transaction"/>
+  <event event="0x03013007" title="A7" name="PUB_RBW" display="accumulate" class="incident" description="PUB A7 Read BandWidth"/>
+  <event event="0x03023007" title="A7" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB A7 Read Latency"/>
+  <event event="0x03033007" title="A7" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB A7 Write Transaction"/>
+  <event event="0x03043007" title="A7" name="PUB_WBW" display="accumulate" class="incident" description="PUB A7 Write BandWidth"/>
+  <event event="0x03053007" title="A7" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB A7 Write Latency"/>
+  <event event="0x03063007" title="A7" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB A7 Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM4_cnt" count="7" />
+<category name="SPRD PUBCP PUB" counter_set="SL2_PUB0_BM4_cnt" per_cpu="no">
+  <!--
+	PUB_PUBCP Performence Bus Monitor
+  -->
+  <event event="0x04003008" title="PUBCP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB PUBCP Read Transaction"/>
+  <event event="0x04013008" title="PUBCP" name="PUB_RBW" display="accumulate" class="incident" description="PUB PUBCP Read BandWidth"/>
+  <event event="0x04023008" title="PUBCP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB PUBCP Read Latency"/>
+  <event event="0x04033008" title="PUBCP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB PUBCP Write Transaction"/>
+  <event event="0x04043008" title="PUBCP" name="PUB_WBW" display="accumulate" class="incident" description="PUB PUBCP Write BandWidth"/>
+  <event event="0x04053008" title="PUBCP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB PUBCP Write Latency"/>
+  <event event="0x04063008" title="PUBCP" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB PUBCP Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM5_cnt" count="7" />
+<category name="SPRD VSP PUB" counter_set="SL2_PUB0_BM5_cnt" per_cpu="no">
+  <!--
+	PUB_VSP Performence Bus Monitor
+  -->
+  <event event="0x05003009" title="VSP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB VSP Read Transaction"/>
+  <event event="0x05013009" title="VSP" name="PUB_RBW" display="accumulate" class="incident" description="PUB VSP Read BandWidth"/>
+  <event event="0x05023009" title="VSP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB VSP Read Latency"/>
+  <event event="0x05033009" title="VSP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB VSP Write Transaction"/>
+  <event event="0x05043009" title="VSP" name="PUB_WBW" display="accumulate" class="incident" description="PUB VSP Write BandWidth"/>
+  <event event="0x05053009" title="VSP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB VSP Write Latency"/>
+  <event event="0x05063009" title="VSP" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB VSP Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM6_cnt" count="7" />
+<category name="SPRD WTL_DSP PUB" counter_set="SL2_PUB0_BM6_cnt" per_cpu="no">
+  <!--
+	PUB_WTL_DSP Performence Bus Monitor
+  -->
+  <event event="0x0600300A" title="WTL_DSP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB WTL_DSP Read Transaction"/>
+  <event event="0x0601300A" title="WTL_DSP" name="PUB_RBW" display="accumulate" class="incident" description="PUB WTL_DSP Read BandWidth"/>
+  <event event="0x0602300A" title="WTL_DSP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB WTL_DSP Read Latency"/>
+  <event event="0x0603300A" title="WTL_DSP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB WTL_DSP Write Transaction"/>
+  <event event="0x0604300A" title="WTL_DSP" name="PUB_WBW" display="accumulate" class="incident" description="PUB WTL_DSP Write BandWidth"/>
+  <event event="0x0605300A" title="WTL_DSP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB WTL_DSP Write Latency"/>
+  <event event="0x0606300A" title="WTL_DSP" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB WTL_DSP Peak BandWidth"/>
+</category>
+
+<counter_set name="SL2_PUB0_BM7_cnt" count="7" />
+<category name="SPRD AP_AON PUB" counter_set="SL2_PUB0_BM7_cnt" per_cpu="no">
+  <!--
+	PUB_AP_AON Performence Bus Monitor
+  -->
+  <event event="0x0700300B" title="AP_AON" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB AP_AON Read Transaction"/>
+  <event event="0x0701300B" title="AP_AON" name="PUB_RBW" display="accumulate" class="incident" description="PUB AP_AON Read BandWidth"/>
+  <event event="0x0702300B" title="AP_AON" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB AP_AON Read Latency"/>
+  <event event="0x0703300B" title="AP_AON" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB AP_AON Write Transaction"/>
+  <event event="0x0704300B" title="AP_AON" name="PUB_WBW" display="accumulate" class="incident" description="PUB AP_AON Write BandWidth"/>
+  <event event="0x0705300B" title="AP_AON" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB AP_AON Write Latency"/>
+  <event event="0x0706300B" title="AP_AON" name="PUB_PEAKBW" display="maximum" class="absolute" description="PUB AP_AON Peak BandWidth"/>
+</category>
+

@@ -1,0 +1,93 @@
+
+<!-- PUB -->
+<counter_set name="SLE_PUB0_BM0_cnt" count="6" />
+<category name="SPRD MM PUB" counter_set="SLE_PUB0_BM0_cnt" per_cpu="no">
+  <!--
+	PUB_MM Performence Bus Monitor
+  -->
+  <event event="0x00DC3004" title="MM" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB MM Read Transaction"/>
+  <event event="0x009C3004" title="MM" name="PUB_RBW" display="accumulate" class="incident" description="PUB MM Read BandWidth"/>
+  <event event="0x00C03004" title="MM" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB MM Read Latency"/>
+  <event event="0x011C3004" title="MM" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB MM Write Transaction"/>
+  <event event="0x00803004" title="MM" name="PUB_WBW" display="accumulate" class="incident" description="PUB MM Write BandWidth"/>
+  <event event="0x01003004" title="MM" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB MM Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM1_cnt" count="6" />
+<category name="SPRD GPU PUB" counter_set="SLE_PUB0_BM1_cnt" per_cpu="no">
+  <!--
+	PUB_GPU Performence Bus Monitor
+  -->
+  <event event="0x00E03004" title="GPU" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB GPU Read Transaction"/>
+  <event event="0x00A03004" title="GPU" name="PUB_RBW" display="accumulate" class="incident" description="PUB GPU Read BandWidth"/>
+  <event event="0x00C43004" title="GPU" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB GPU Read Latency"/>
+  <event event="0x01203004" title="GPU" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB GPU Write Transaction"/>
+  <event event="0x00843004" title="GPU" name="PUB_WBW" display="accumulate" class="incident" description="PUB GPU Write BandWidth"/>
+  <event event="0x01043004" title="GPU" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB GPU Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM2_cnt" count="6" />
+<category name="SPRD DISPC PUB" counter_set="SLE_PUB0_BM2_cnt" per_cpu="no">
+  <!--
+	PUB_DISPC Performence Bus Monitor
+  -->
+  <event event="0x00E43004" title="DISPC" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB DISPC Read Transaction"/>
+  <event event="0x00A43004" title="DISPC" name="PUB_RBW" display="accumulate" class="incident" description="PUB DISPC Read BandWidth"/>
+  <event event="0x00C83004" title="DISPC" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB DISPC Read Latency"/>
+  <event event="0x01243004" title="DISPC" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB DISPC Write Transaction"/>
+  <event event="0x00883004" title="DISPC" name="PUB_WBW" display="accumulate" class="incident" description="PUB DISPC Write BandWidth"/>
+  <event event="0x01083004" title="DISPC" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB DISPC Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM3_cnt" count="6" />
+<category name="SPRD A53 PUB" counter_set="SLE_PUB0_BM3_cnt" per_cpu="no">
+  <!--
+	PUB_A53 Performence Bus Monitor
+  -->
+  <event event="0x00E83004" title="A53" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB A53 Read Transaction"/>
+  <event event="0x00A83004" title="A53" name="PUB_RBW" display="accumulate" class="incident" description="PUB A53 Read BandWidth"/>
+  <event event="0x00CC3004" title="A53" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB A53 Read Latency"/>
+  <event event="0x01283004" title="A53" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB A53 Write Transaction"/>
+  <event event="0x008C3004" title="A53" name="PUB_WBW" display="accumulate" class="incident" description="PUB A53 Write BandWidth"/>
+  <event event="0x010C3004" title="A53" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB A53 Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM4_cnt" count="6" />
+<category name="SPRD AP_VSP_GSP PUB" counter_set="SLE_PUB0_BM4_cnt" per_cpu="no">
+  <!--
+	PUB_AP_VSP_GSP Performence Bus Monitor
+  -->
+  <event event="0x00EC3004" title="AP_VSP_GSP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB AP_VSP_GSP Read Transaction"/>
+  <event event="0x00AC3004" title="AP_VSP_GSP" name="PUB_RBW" display="accumulate" class="incident" description="PUB AP_VSP_GSP Read BandWidth"/>
+  <event event="0x00D03004" title="AP_VSP_GSP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB AP_VSP_GSP Read Latency"/>
+  <event event="0x012C3004" title="AP_VSP_GSP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB AP_VSP_GSP Write Transaction"/>
+  <event event="0x00903004" title="AP_VSP_GSP" name="PUB_WBW" display="accumulate" class="incident" description="PUB AP_VSP_GSP Write BandWidth"/>
+  <event event="0x01103004" title="AP_VSP_GSP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB AP_VSP_GSP Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM5_cnt" count="6" />
+<category name="SPRD WTL_PUBCP PUB" counter_set="SLE_PUB0_BM5_cnt" per_cpu="no">
+  <!--
+	PUB_WTL_PUBCP Performence Bus Monitor
+  -->
+  <event event="0x00F03004" title="WTL_PUBCP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB WTL_PUBCP Read Transaction"/>
+  <event event="0x00B03004" title="WTL_PUBCP" name="PUB_RBW" display="accumulate" class="incident" description="PUB WTL_PUBCP Read BandWidth"/>
+  <event event="0x00D43004" title="WTL_PUBCP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB WTL_PUBCP Read Latency"/>
+  <event event="0x01303004" title="WTL_PUBCP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB WTL_PUBCP Write Transaction"/>
+  <event event="0x00943004" title="WTL_PUBCP" name="PUB_WBW" display="accumulate" class="incident" description="PUB WTL_PUBCP Write BandWidth"/>
+  <event event="0x01143004" title="WTL_PUBCP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB WTL_PUBCP Write Latency"/>
+</category>
+
+<counter_set name="SLE_PUB0_BM6_cnt" count="6" />
+<category name="SPRD WCN_AON PUB" counter_set="SLE_PUB0_BM6_cnt" per_cpu="no">
+  <!--
+	PUB_WCN_AON Performence Bus Monitor
+  -->
+  <event event="0x00F43004" title="WCN_AON" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB WCN_AON Read Transaction"/>
+  <event event="0x00B43004" title="WCN_AON" name="PUB_RBW" display="accumulate" class="incident" description="PUB WCN_AON Read BandWidth"/>
+  <event event="0x00D83004" title="WCN_AON" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB WCN_AON Read Latency"/>
+  <event event="0x01343004" title="WCN_AON" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB WCN_AON Write Transaction"/>
+  <event event="0x00983004" title="WCN_AON" name="PUB_WBW" display="accumulate" class="incident" description="PUB WCN_AON Write BandWidth"/>
+  <event event="0x01183004" title="WCN_AON" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB WCN_AON Write Latency"/>
+</category>
+

@@ -1,0 +1,143 @@
+
+<!-- PUB0 -->
+<counter_set name="iWh2_PUB0_BM0_cnt" count="7" />
+<category name="SPRD BIA_AP PUB0" counter_set="iWh2_PUB0_BM0_cnt" per_cpu="no">
+  <!--
+	PUB0_BIA_AP Performence Bus Monitor
+  -->
+  <event event="0x0000C002" title="BIA_AP" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 BIA_AP Read Transaction"/>
+  <event event="0x0001C002" title="BIA_AP" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 BIA_AP Read BandWidth"/>
+  <event event="0x0002C002" title="BIA_AP" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 BIA_AP Read Latency"/>
+  <event event="0x0003C002" title="BIA_AP" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 BIA_AP Write Transaction"/>
+  <event event="0x0004C002" title="BIA_AP" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 BIA_AP Write BandWidth"/>
+  <event event="0x0005C002" title="BIA_AP" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 BIA_AP Write Latency"/>
+  <event event="0x0006C002" title="BIA_AP" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 BIA_AP Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB0_BM1_cnt" count="7" />
+<category name="SPRD VSP_GSP PUB0" counter_set="iWh2_PUB0_BM1_cnt" per_cpu="no">
+  <!--
+	PUB0_VSP_GSP Performence Bus Monitor
+  -->
+  <event event="0x0100C003" title="VSP_GSP" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 VSP_GSP Read Transaction"/>
+  <event event="0x0101C003" title="VSP_GSP" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 VSP_GSP Read BandWidth"/>
+  <event event="0x0102C003" title="VSP_GSP" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 VSP_GSP Read Latency"/>
+  <event event="0x0103C003" title="VSP_GSP" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 VSP_GSP Write Transaction"/>
+  <event event="0x0104C003" title="VSP_GSP" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 VSP_GSP Write BandWidth"/>
+  <event event="0x0105C003" title="VSP_GSP" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 VSP_GSP Write Latency"/>
+  <event event="0x0106C003" title="VSP_GSP" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 VSP_GSP Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB0_BM2_cnt" count="7" />
+<category name="SPRD DISP_CAM PUB0" counter_set="iWh2_PUB0_BM2_cnt" per_cpu="no">
+  <!--
+	PUB0_DISP_CAM Performence Bus Monitor
+  -->
+  <event event="0x0200C004" title="DISP_CAM" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 DISP_CAM Read Transaction"/>
+  <event event="0x0201C004" title="DISP_CAM" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 DISP_CAM Read BandWidth"/>
+  <event event="0x0202C004" title="DISP_CAM" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 DISP_CAM Read Latency"/>
+  <event event="0x0203C004" title="DISP_CAM" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 DISP_CAM Write Transaction"/>
+  <event event="0x0204C004" title="DISP_CAM" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 DISP_CAM Write BandWidth"/>
+  <event event="0x0205C004" title="DISP_CAM" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 DISP_CAM Write Latency"/>
+  <event event="0x0206C004" title="DISP_CAM" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 DISP_CAM Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB0_BM3_cnt" count="7" />
+<category name="SPRD GPU PUB0" counter_set="iWh2_PUB0_BM3_cnt" per_cpu="no">
+  <!--
+	PUB0_GPU Performence Bus Monitor
+  -->
+  <event event="0x0300C005" title="GPU" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 GPU Read Transaction"/>
+  <event event="0x0301C005" title="GPU" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 GPU Read BandWidth"/>
+  <event event="0x0302C005" title="GPU" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 GPU Read Latency"/>
+  <event event="0x0303C005" title="GPU" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 GPU Write Transaction"/>
+  <event event="0x0304C005" title="GPU" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 GPU Write BandWidth"/>
+  <event event="0x0305C005" title="GPU" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 GPU Write Latency"/>
+  <event event="0x0306C005" title="GPU" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 GPU Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB0_BM4_cnt" count="7" />
+<category name="SPRD WTL PUB0" counter_set="iWh2_PUB0_BM4_cnt" per_cpu="no">
+  <!--
+	PUB0_WTL Performence Bus Monitor
+  -->
+  <event event="0x0400C006" title="WTL" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 WTL Read Transaction"/>
+  <event event="0x0401C006" title="WTL" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 WTL Read BandWidth"/>
+  <event event="0x0402C006" title="WTL" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 WTL Read Latency"/>
+  <event event="0x0403C006" title="WTL" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 WTL Write Transaction"/>
+  <event event="0x0404C006" title="WTL" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 WTL Write BandWidth"/>
+  <event event="0x0405C006" title="WTL" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 WTL Write Latency"/>
+  <event event="0x0406C006" title="WTL" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 WTL Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB0_BM5_cnt" count="7" />
+<category name="SPRD AG_PUBCP PUB0" counter_set="iWh2_PUB0_BM5_cnt" per_cpu="no">
+  <!--
+	PUB0_AG_PUBCP Performence Bus Monitor
+  -->
+  <event event="0x0500C007" title="AG_PUBCP" name="PUB0_RTRANS" display="accumulate" class="incident" description="PUB0 AG_PUBCP Read Transaction"/>
+  <event event="0x0501C007" title="AG_PUBCP" name="PUB0_RBW" display="accumulate" class="incident" description="PUB0 AG_PUBCP Read BandWidth"/>
+  <event event="0x0502C007" title="AG_PUBCP" name="PUB0_RLATENCY" display="accumulate" class="incident" description="PUB0 AG_PUBCP Read Latency"/>
+  <event event="0x0503C007" title="AG_PUBCP" name="PUB0_WTRANS" display="accumulate" class="incident" description="PUB0 AG_PUBCP Write Transaction"/>
+  <event event="0x0504C007" title="AG_PUBCP" name="PUB0_WBW" display="accumulate" class="incident" description="PUB0 AG_PUBCP Write BandWidth"/>
+  <event event="0x0505C007" title="AG_PUBCP" name="PUB0_WLATENCY" display="accumulate" class="incident" description="PUB0 AG_PUBCP Write Latency"/>
+  <event event="0x0506C007" title="AG_PUBCP" name="PUB0_PEAKBW" display="maximum" class="absolute" description="PUB0 AG_PUBCP Peak BandWidth"/>
+</category>
+
+<!-- PUB1 -->
+<counter_set name="iWh2_PUB1_BM0_cnt" count="7" />
+<category name="SPRD BIA_AP PUB1" counter_set="iWh2_PUB1_BM0_cnt" per_cpu="no">
+  <!--
+	PUB1_BIA_AP Performence Bus Monitor
+  -->
+  <event event="0x1000C082" title="BIA_AP" name="PUB1_RTRANS" display="accumulate" class="incident" description="PUB1 BIA_AP Read Transaction"/>
+  <event event="0x1001C082" title="BIA_AP" name="PUB1_RBW" display="accumulate" class="incident" description="PUB1 BIA_AP Read BandWidth"/>
+  <event event="0x1002C082" title="BIA_AP" name="PUB1_RLATENCY" display="accumulate" class="incident" description="PUB1 BIA_AP Read Latency"/>
+  <event event="0x1003C082" title="BIA_AP" name="PUB1_WTRANS" display="accumulate" class="incident" description="PUB1 BIA_AP Write Transaction"/>
+  <event event="0x1004C082" title="BIA_AP" name="PUB1_WBW" display="accumulate" class="incident" description="PUB1 BIA_AP Write BandWidth"/>
+  <event event="0x1005C082" title="BIA_AP" name="PUB1_WLATENCY" display="accumulate" class="incident" description="PUB1 BIA_AP Write Latency"/>
+  <event event="0x1006C082" title="BIA_AP" name="PUB1_PEAKBW" display="maximum" class="absolute" description="PUB1 BIA_AP Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB1_BM1_cnt" count="7" />
+<category name="SPRD VSP_GSP PUB1" counter_set="iWh2_PUB1_BM1_cnt" per_cpu="no">
+  <!--
+	PUB1_VSP_GSP Performence Bus Monitor
+  -->
+  <event event="0x1100C083" title="VSP_GSP" name="PUB1_RTRANS" display="accumulate" class="incident" description="PUB1 VSP_GSP Read Transaction"/>
+  <event event="0x1101C083" title="VSP_GSP" name="PUB1_RBW" display="accumulate" class="incident" description="PUB1 VSP_GSP Read BandWidth"/>
+  <event event="0x1102C083" title="VSP_GSP" name="PUB1_RLATENCY" display="accumulate" class="incident" description="PUB1 VSP_GSP Read Latency"/>
+  <event event="0x1103C083" title="VSP_GSP" name="PUB1_WTRANS" display="accumulate" class="incident" description="PUB1 VSP_GSP Write Transaction"/>
+  <event event="0x1104C083" title="VSP_GSP" name="PUB1_WBW" display="accumulate" class="incident" description="PUB1 VSP_GSP Write BandWidth"/>
+  <event event="0x1105C083" title="VSP_GSP" name="PUB1_WLATENCY" display="accumulate" class="incident" description="PUB1 VSP_GSP Write Latency"/>
+  <event event="0x1106C083" title="VSP_GSP" name="PUB1_PEAKBW" display="maximum" class="absolute" description="PUB1 VSP_GSP Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB1_BM2_cnt" count="7" />
+<category name="SPRD DISP_CAM PUB1" counter_set="iWh2_PUB1_BM2_cnt" per_cpu="no">
+  <!--
+	PUB1_DISP_CAM Performence Bus Monitor
+  -->
+  <event event="0x1200C084" title="DISP_CAM" name="PUB1_RTRANS" display="accumulate" class="incident" description="PUB1 DISP_CAM Read Transaction"/>
+  <event event="0x1201C084" title="DISP_CAM" name="PUB1_RBW" display="accumulate" class="incident" description="PUB1 DISP_CAM Read BandWidth"/>
+  <event event="0x1202C084" title="DISP_CAM" name="PUB1_RLATENCY" display="accumulate" class="incident" description="PUB1 DISP_CAM Read Latency"/>
+  <event event="0x1203C084" title="DISP_CAM" name="PUB1_WTRANS" display="accumulate" class="incident" description="PUB1 DISP_CAM Write Transaction"/>
+  <event event="0x1204C084" title="DISP_CAM" name="PUB1_WBW" display="accumulate" class="incident" description="PUB1 DISP_CAM Write BandWidth"/>
+  <event event="0x1205C084" title="DISP_CAM" name="PUB1_WLATENCY" display="accumulate" class="incident" description="PUB1 DISP_CAM Write Latency"/>
+  <event event="0x1206C084" title="DISP_CAM" name="PUB1_PEAKBW" display="maximum" class="absolute" description="PUB1 DISP_CAM Peak BandWidth"/>
+</category>
+
+<counter_set name="iWh2_PUB1_BM3_cnt" count="7" />
+<category name="SPRD GPU PUB1" counter_set="iWh2_PUB1_BM3_cnt" per_cpu="no">
+  <!--
+	PUB1_GPU Performence Bus Monitor
+  -->
+  <event event="0x1300C085" title="GPU" name="PUB1_RTRANS" display="accumulate" class="incident" description="PUB1 GPU Read Transaction"/>
+  <event event="0x1301C085" title="GPU" name="PUB1_RBW" display="accumulate" class="incident" description="PUB1 GPU Read BandWidth"/>
+  <event event="0x1302C085" title="GPU" name="PUB1_RLATENCY" display="accumulate" class="incident" description="PUB1 GPU Read Latency"/>
+  <event event="0x1303C085" title="GPU" name="PUB1_WTRANS" display="accumulate" class="incident" description="PUB1 GPU Write Transaction"/>
+  <event event="0x1304C085" title="GPU" name="PUB1_WBW" display="accumulate" class="incident" description="PUB1 GPU Write BandWidth"/>
+  <event event="0x1305C085" title="GPU" name="PUB1_WLATENCY" display="accumulate" class="incident" description="PUB1 GPU Write Latency"/>
+  <event event="0x1306C085" title="GPU" name="PUB1_PEAKBW" display="maximum" class="absolute" description="PUB1 GPU Peak BandWidth"/>
+</category>
+

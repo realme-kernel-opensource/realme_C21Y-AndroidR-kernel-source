@@ -1,0 +1,122 @@
+
+<!-- PUB -->
+<counter_set name="SL3_PUB0_BM0_cnt" count="8" />
+<category name="UNISOC MM PUB" counter_set="SL3_PUB0_BM0_cnt" per_cpu="no">
+  <!--
+	PUB_MM Performence Bus Monitor
+  -->
+  <event event="0x00E03001" title="MM" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB MM Read Transaction"/>
+  <event event="0x00A03001" title="MM" name="PUB_RBW" display="accumulate" class="incident" description="PUB MM Read BandWidth"/>
+  <event event="0x00C03001" title="MM" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB MM Read Latency"/>
+  <event event="0x01203001" title="MM" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB MM Write Transaction"/>
+  <event event="0x00803001" title="MM" name="PUB_WBW" display="accumulate" class="incident" description="PUB MM Write BandWidth"/>
+  <event event="0x01003001" title="MM" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB MM Write Latency"/>
+  <event event="0x02803001" title="MM" name="PUB_WQOS" display="accumulate" class="incident" description="PUB MM Write QoS"/>
+  <event event="0x02A03001" title="MM" name="PUB_RQOS" display="accumulate" class="incident" description="PUB MM Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM1_cnt" count="8" />
+<category name="UNISOC GPU PUB" counter_set="SL3_PUB0_BM1_cnt" per_cpu="no">
+  <!--
+	PUB_GPU Performence Bus Monitor
+  -->
+  <event event="0x00E43001" title="GPU" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB GPU Read Transaction"/>
+  <event event="0x00A43001" title="GPU" name="PUB_RBW" display="accumulate" class="incident" description="PUB GPU Read BandWidth"/>
+  <event event="0x00C43001" title="GPU" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB GPU Read Latency"/>
+  <event event="0x01243001" title="GPU" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB GPU Write Transaction"/>
+  <event event="0x00843001" title="GPU" name="PUB_WBW" display="accumulate" class="incident" description="PUB GPU Write BandWidth"/>
+  <event event="0x01043001" title="GPU" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB GPU Write Latency"/>
+  <event event="0x02843001" title="GPU" name="PUB_WQOS" display="accumulate" class="incident" description="PUB GPU Write QoS"/>
+  <event event="0x02A43001" title="GPU" name="PUB_RQOS" display="accumulate" class="incident" description="PUB GPU Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM2_cnt" count="8" />
+<category name="UNISOC DISPC PUB" counter_set="SL3_PUB0_BM2_cnt" per_cpu="no">
+  <!--
+	PUB_DISPC Performence Bus Monitor
+  -->
+  <event event="0x00E83001" title="DISPC" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB DISPC Read Transaction"/>
+  <event event="0x00A83001" title="DISPC" name="PUB_RBW" display="accumulate" class="incident" description="PUB DISPC Read BandWidth"/>
+  <event event="0x00C83001" title="DISPC" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB DISPC Read Latency"/>
+  <event event="0x01283001" title="DISPC" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB DISPC Write Transaction"/>
+  <event event="0x00883001" title="DISPC" name="PUB_WBW" display="accumulate" class="incident" description="PUB DISPC Write BandWidth"/>
+  <event event="0x01083001" title="DISPC" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB DISPC Write Latency"/>
+  <event event="0x02883001" title="DISPC" name="PUB_WQOS" display="accumulate" class="incident" description="PUB DISPC Write QoS"/>
+  <event event="0x02A83001" title="DISPC" name="PUB_RQOS" display="accumulate" class="incident" description="PUB DISPC Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM3_cnt" count="8" />
+<category name="UNISOC A55 PUB" counter_set="SL3_PUB0_BM3_cnt" per_cpu="no">
+  <!--
+	PUB_A55 Performence Bus Monitor
+  -->
+  <event event="0x00EC3001" title="A55" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB A55 Read Transaction"/>
+  <event event="0x00AC3001" title="A55" name="PUB_RBW" display="accumulate" class="incident" description="PUB A55 Read BandWidth"/>
+  <event event="0x00CC3001" title="A55" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB A55 Read Latency"/>
+  <event event="0x012C3001" title="A55" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB A55 Write Transaction"/>
+  <event event="0x008C3001" title="A55" name="PUB_WBW" display="accumulate" class="incident" description="PUB A55 Write BandWidth"/>
+  <event event="0x010C3001" title="A55" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB A55 Write Latency"/>
+  <event event="0x028C3001" title="A55" name="PUB_WQOS" display="accumulate" class="incident" description="PUB A55 Write QoS"/>
+  <event event="0x02AC3001" title="A55" name="PUB_RQOS" display="accumulate" class="incident" description="PUB A55 Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM4_cnt" count="8" />
+<category name="UNISOC AP_PUBCP PUB" counter_set="SL3_PUB0_BM4_cnt" per_cpu="no">
+  <!--
+	PUB_AP_PUBCP Performence Bus Monitor
+  -->
+  <event event="0x00F03001" title="AP_PUBCP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB AP_PUBCP Read Transaction"/>
+  <event event="0x00B03001" title="AP_PUBCP" name="PUB_RBW" display="accumulate" class="incident" description="PUB AP_PUBCP Read BandWidth"/>
+  <event event="0x00D03001" title="AP_PUBCP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB AP_PUBCP Read Latency"/>
+  <event event="0x01303001" title="AP_PUBCP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB AP_PUBCP Write Transaction"/>
+  <event event="0x00903001" title="AP_PUBCP" name="PUB_WBW" display="accumulate" class="incident" description="PUB AP_PUBCP Write BandWidth"/>
+  <event event="0x01103001" title="AP_PUBCP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB AP_PUBCP Write Latency"/>
+  <event event="0x02903001" title="AP_PUBCP" name="PUB_WQOS" display="accumulate" class="incident" description="PUB AP_PUBCP Write QoS"/>
+  <event event="0x02B03001" title="AP_PUBCP" name="PUB_RQOS" display="accumulate" class="incident" description="PUB AP_PUBCP Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM5_cnt" count="8" />
+<category name="UNISOC WTLCP PUB" counter_set="SL3_PUB0_BM5_cnt" per_cpu="no">
+  <!--
+	PUB_WTLCP Performence Bus Monitor
+  -->
+  <event event="0x00F43001" title="WTLCP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB WTLCP Read Transaction"/>
+  <event event="0x00B43001" title="WTLCP" name="PUB_RBW" display="accumulate" class="incident" description="PUB WTLCP Read BandWidth"/>
+  <event event="0x00D43001" title="WTLCP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB WTLCP Read Latency"/>
+  <event event="0x01343001" title="WTLCP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB WTLCP Write Transaction"/>
+  <event event="0x00943001" title="WTLCP" name="PUB_WBW" display="accumulate" class="incident" description="PUB WTLCP Write BandWidth"/>
+  <event event="0x01143001" title="WTLCP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB WTLCP Write Latency"/>
+  <event event="0x02943001" title="WTLCP" name="PUB_WQOS" display="accumulate" class="incident" description="PUB WTLCP Write QoS"/>
+  <event event="0x02B43001" title="WTLCP" name="PUB_RQOS" display="accumulate" class="incident" description="PUB WTLCP Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM6_cnt" count="8" />
+<category name="UNISOC WCN_AON PUB" counter_set="SL3_PUB0_BM6_cnt" per_cpu="no">
+  <!--
+	PUB_WCN_AON Performence Bus Monitor
+  -->
+  <event event="0x00F83001" title="WCN_AON" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB WCN_AON Read Transaction"/>
+  <event event="0x00B83001" title="WCN_AON" name="PUB_RBW" display="accumulate" class="incident" description="PUB WCN_AON Read BandWidth"/>
+  <event event="0x00D83001" title="WCN_AON" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB WCN_AON Read Latency"/>
+  <event event="0x01383001" title="WCN_AON" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB WCN_AON Write Transaction"/>
+  <event event="0x00983001" title="WCN_AON" name="PUB_WBW" display="accumulate" class="incident" description="PUB WCN_AON Write BandWidth"/>
+  <event event="0x01183001" title="WCN_AON" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB WCN_AON Write Latency"/>
+  <event event="0x02983001" title="WCN_AON" name="PUB_WQOS" display="accumulate" class="incident" description="PUB WCN_AON Write QoS"/>
+  <event event="0x02B83001" title="WCN_AON" name="PUB_RQOS" display="accumulate" class="incident" description="PUB WCN_AON Read QoS"/>
+</category>
+
+<counter_set name="SL3_PUB0_BM7_cnt" count="8" />
+<category name="UNISOC VSP PUB" counter_set="SL3_PUB0_BM6_cnt" per_cpu="no">
+  <!--
+	PUB_VSP Performence Bus Monitor
+  -->
+  <event event="0x00FC3001" title="VSP" name="PUB_RTRANS" display="accumulate" class="incident" description="PUB VSP Read Transaction"/>
+  <event event="0x00BC3001" title="VSP" name="PUB_RBW" display="accumulate" class="incident" description="PUB VSP Read BandWidth"/>
+  <event event="0x00DC3001" title="VSP" name="PUB_RLATENCY" display="accumulate" class="incident" description="PUB VSP Read Latency"/>
+  <event event="0x013C3001" title="VSP" name="PUB_WTRANS" display="accumulate" class="incident" description="PUB VSP Write Transaction"/>
+  <event event="0x009C3001" title="VSP" name="PUB_WBW" display="accumulate" class="incident" description="PUB VSP Write BandWidth"/>
+  <event event="0x011C3001" title="VSP" name="PUB_WLATENCY" display="accumulate" class="incident" description="PUB VSP Write Latency"/>
+  <event event="0x029C3001" title="VSP" name="PUB_WQOS" display="accumulate" class="incident" description="PUB VSP Write QoS"/>
+  <event event="0x02BC3001" title="VSP" name="PUB_RQOS" display="accumulate" class="incident" description="PUB VSP Read QoS"/>
+</category>
+

@@ -1,0 +1,38 @@
+#
+# sprd_vdsp.ko
+#
+# Kbuild: for kernel building external module
+#
+# Note:
+# - Please refer to modules/sample/Kbuild to find out what should be
+#   done is this Kbuild file
+#
+
+#
+# Source List
+#
+KO_MODULE_NAME := sprd_vdsp
+KO_MODULE_PATH := $(src)
+KO_MODULE_SRC  :=
+
+VDSP_DIR := $(BSP_BOARD_CAMERA_MODULE_VDSP_DEVICE)
+
+KO_MODULE_SRC += \
+	$(shell find $(KO_MODULE_PATH)/$(VDSP_DIR)/ceva1.0/src -name "*.c")
+
+#
+# Build Options
+#
+ccflags-y += -I$(KO_MODULE_PATH)/$(VDSP_DIR)/ceva1.0/inc/
+ccflags-y += -I$(KO_MODULE_PATH)/../sensor/
+ccflags-y += -I$(KO_MODULE_PATH)/../common
+ccflags-y += -I$(KO_MODULE_PATH)/../interface
+ccflags-y += -I$(srctree)/drivers/staging/android/ion
+ccflags-y += -I$(srctree)/drivers/devfreq/apsys/
+
+#
+# Final Objects
+#
+obj-m := $(KO_MODULE_NAME).o
+# Comment it if the only object file has the same name with module
+$(KO_MODULE_NAME)-y := $(patsubst $(src)/%.c,%.o,$(KO_MODULE_SRC))

@@ -1,0 +1,47 @@
+ifneq ($(TARGET_SIMULATOR),true)
+ifneq ($(TARGET_BUILD_VARIANT),user)
+
+LOCAL_PATH:= $(call my-dir)
+my_local_path := $(LOCAL_PATH)
+CLEAN_OBJ := $(shell cd $(LOCAL_PATH) && $(MAKE) clean)
+
+#gator.ko
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := gator.ko
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/bin
+LOCAL_MODULE_RELATIVE_PATH := gator
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_STRIP_MODULE := false
+include $(BUILD_PREBUILT)
+
+GATOR_FLAGS := CONFIG_GATOR_SPRD_SUPPORT=y
+ifeq ($(strip $(TARGET_ARCH)),x86_64)
+GATOR_FLAGS += CONFIG_GATOR_SPRD_X86_SUPPORT=y
+endif
+
+
+#TODO set true to support mali
+my_GATOR_MALI_SUPPORT := false
+GATOR_MALI_FLAGS :=
+
+ifeq ($(strip $(my_GATOR_MALI_SUPPORT)),true)
+$(info [gator.ko]*** support GPU platform: $(TARGET_GPU_PLATFORM) ***)
+ifeq ($(strip $(TARGET_GPU_PLATFORM)),midgard)
+GATOR_MALI_FLAGS += CONFIG_GATOR_WITH_MALI_SUPPORT=y
+GATOR_MALI_FLAGS += CONFIG_GATOR_MALI_MIDGARD=y
+GATOR_MALI_FLAGS += DDK_DIR=$(ANDROID_BUILD_TOP)/vendor/sprd/external/drivers/gpu/$(TARGET_GPU_PLATFORM)
+GATOR_MALI_FLAGS += CONFIG_GATOR_MALI_MIDGARD_PATH=mali
+endif
+$(info [gator.ko]*** $(GATOR_MALI_FLAGS) ***)
+endif
+GATOR_FLAGS += $(GATOR_MALI_FLAGS)
+
+$(info [gator.ko]*** $(KERNEL_CROSS_COMPILE) ***)
+
+$(my_local_path)/gator.ko: $(TARGET_PREBUILT_KERNEL)
+	$(MAKE) -C $(PRODUCT_OUT)/obj/KERNEL M=$(ANDROID_BUILD_TOP)/$(my_local_path) ARCH=$(TARGET_KERNEL_ARCH) CROSS_COMPILE=$(KERNEL_CROSS_COMPILE) $(GATOR_FLAGS) modules
+
+endif
+endif

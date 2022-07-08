@@ -1,0 +1,130 @@
+/ {
+	fragment {
+		target-path = "/";
+		__overlay__ {
+			lcds {
+				lcd_icnl9911c_truly_mipi_hd: lcd_icnl9911c_truly_mipi_hd {
+					sprd,dsi-work-mode = <1>; /* video burst mode*/
+					sprd,dsi-lane-number = <4>;
+					sprd,dsi-color-format = "rgb888";
+
+					sprd,phy-bit-clock = <710000>;  /* kbps */
+					sprd,phy-escape-clock = <20000>;/* kHz */
+
+					sprd,width-mm = <68>;
+					sprd,height-mm = <151>;
+
+					sprd,esd-check-mode = <1>;
+					sprd,esd-check-enable = <1>;
+					sprd,esd-check-period = <2000>;
+
+					sprd,reset-on-sequence = <1 5>, <0 5>, <1 20>;
+					sprd,reset-off-sequence = <0 5>;
+
+					sprd,initial-command = [
+						39 00 00 03 F0 5A 59
+						39 00 00 03 F1 A5 A6
+						39 00 00 1F B0 87 86 85 84 88 89 00 00 33 33 33 33 00 05 05 80 05 00 0F 05 04 03 02 01 02 03 04 00 00 00
+						39 00 00 1E B1 53 43 85 00 00 05 05 80 05 00 04 08 54 00 00 00 44 40 02 01 40 02 01 40 02 01 40 02 01
+						39 00 00 1D B5 08 00 00 c0 00 04 06 c1 c1 0C 0C 0E 0E 10 10 12 12 03 03 03 03 03 FF FF FC 00 00 00
+						39 00 00 1D B4 09 00 00 c0 00 05 07 c1 c1 0D 0D 0F 0F 11 11 13 13 03 03 03 03 03 FF FF FC 00 00 00
+						39 00 00 19 B8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+						39 00 00 0E BB 01 05 09 11 0D 19 1D 55 25 69 00 21 25
+						39 00 00 0F BC 00 00 00 00 02 20 FF 00 03 13 01 73 33 00
+						39 00 00 0B BD E9 02 4F CF 72 A4 08 44 AE 15
+						39 00 00 0B BE 73 73 50 32 0C 77 43 07 0E 0E
+						39 00 00 09 BF 07 25 07 25 7F 00 11 04
+						39 00 00 0A C0 10 FF FF FF FF FF 00 FF 00
+						39 00 00 14 C1 C0 20 20 7C 04 5A 5A 04 2A 40 36 00 07 CF FF FF C0 00 C0
+						39 00 00 0A C2 CC 01 10 00 01 30 02 21 43
+						39 00 00 0B C3 06 00 FF 00 FF 00 00 81 01 00
+						39 00 00 0B C4 84 01 2B 41 00 3C 00 03 03 2E
+						39 00 00 0C C5 03 1C C0 C0 40 10 42 44 0a 09 14
+						39 00 00 0B C6 88 16 20 28 29 33 64 34 08 04
+						39 00 00 02 CB 00
+						39 00 00 06 D0 80 0D FF 0F 63
+						39 00 00 02 D2 42
+						39 00 00 18 E1 EF FE FE FE FE EE F0 20 33 FF 00 00 6A 90 C0 0D 6A F0 3E FF 00 03 92
+						39 00 00 1B E0 30 00 80 88 11 3F 22 62 DF A0 04 CC 01 FF F6 FF F0 FD FF FD F8 F5 FC FC FD FF
+						39 00 00 03 F1 5A 59
+						39 00 00 03 F0 A5 A6
+						39 00 00 02 35 00
+						39 00 00 03 51 00 00
+						39 00 00 02 53 2C
+						39 00 00 02 55 00
+						39 78 00 01 11
+						39 28 00 01 29
+						39 0A 00 02 26 01
+						];
+
+					sprd,sleep-in-command = [
+						39 00 00 02 26 08
+						13 0A 00 01 28
+						13 78 00 01 10
+						];
+					sprd,sleep-out-command = [
+						13 78 00 01 11
+						13 32 00 01 29
+						39 00 00 02 26 01
+						];
+
+					sprd,cabc-off-command = [
+						39 00 00 02 55 00
+					];
+					sprd,cabc-ui-command = [
+						39 00 00 03 F0 5A 59
+						39 00 00 03 F1 A5 A6
+						39 00 00 21 E0 30 00 80 88 11 3F 22 62 DF A0 04 CC 01 FF FA FF F0 FD DB D3 F8 AD FC FC FB FF 00 00 00 00 00 00
+						39 00 00 18 E1 7C F8 CA AA AB 9B F0 0C F0 85 F0 70 E5 3E 00 8A FD F0 E0 FF 00 03 92
+						39 00 00 03 F1 5A 59
+						39 00 00 03 F0 A5 A6
+						39 00 00 02 55 03
+					];
+					sprd,cabc-still-command = [
+						39 00 00 03 F0 5A 59
+						39 00 00 03 F1 A5 A6
+						39 00 00 21 E0 30 00 80 88 11 3F 22 62 DF A0 04 CC 01 FF FA FF F0 FD DB D3 F8 AD FC FC FB FF 00 00 00 00 00 00
+						39 00 00 18 E1 7C F8 CA AA AB 9B F0 0C F0 85 F0 70 E5 3E 00 8A FD F0 E0 FF 00 03 92
+						39 00 00 03 F1 5A 59
+						39 00 00 03 F0 A5 A6
+						39 00 00 02 55 03
+					];
+					sprd,cabc-moving-command = [
+						39 00 00 03 F0 5A 59
+						39 00 00 03 F1 A5 A6
+						39 00 00 21 E0 30 00 80 88 11 3F 22 62 DF A0 04 CC 01 FF FA FF F0 FD DB D3 F8 AD FC FC FB FF 00 00 00 00 00 00
+						39 00 00 18 E1 7C F8 CA AA AB 9B F0 0C F0 85 F0 70 E5 3E 00 8A FD F0 E0 FF 00 03 92
+						39 00 00 03 F1 5A 59
+						39 00 00 03 F0 A5 A6
+						39 00 00 02 55 03
+					];
+
+					display-timings {
+						native-mode = <&icnl9911c_truly_timing0>;
+
+						icnl9911c_truly_timing0: timing0 {
+							clock-frequency = <96000000>;
+							hactive = <720>;
+							vactive = <1600>;
+							hback-porch = <90>;
+							hfront-porch = <90>;
+							vback-porch = <32>;
+							vfront-porch = <124>;
+							hsync-len = <4>;
+							vsync-len = <4>;
+
+						};
+					};
+
+					oled-backlight {
+						default-brightness = <819>;
+						sprd,max-level = <4095>;
+						brightness-levels = [
+							39 00 00 03 51 03 33
+						];
+					};
+				};
+			};
+		};
+	};
+};

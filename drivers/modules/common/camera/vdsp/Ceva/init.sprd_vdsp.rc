@@ -1,0 +1,4 @@
+
+on early-init
+    insmod /vendor/lib/modules/vdsp.ko
+

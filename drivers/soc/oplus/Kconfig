@@ -1,0 +1,8 @@
+config OPLUS_DEVICE_IFNO
+        bool "config oplus devinfo"
+        select OPLUS_ARCH_FILE
+        help
+        define this config to compile devinfo.c for device register.
+
+source "drivers/soc/oplus/oplus_devinfo/Kconfig"
+

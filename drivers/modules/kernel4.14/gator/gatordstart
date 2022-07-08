@@ -1,0 +1,2 @@
+#!/bin/sh
+/vendor/bin/gator/gatord $* -c /data/configuration.xml &
